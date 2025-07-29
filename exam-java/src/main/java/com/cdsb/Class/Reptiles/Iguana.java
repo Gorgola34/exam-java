@@ -6,8 +6,9 @@ import com.cdsb.Enums.Feed;
 import com.cdsb.Enums.Habitats;
 import com.cdsb.Enums.Reptiles;
 import com.cdsb.Enums.Species;
+import com.cdsb.Interfaces.Live;
 
-public class Iguana extends Animals {
+public class Iguana extends Animals implements Live {
 
     int habitatSize;
     Feed feed;
@@ -54,6 +55,7 @@ public class Iguana extends Animals {
         System.out.println("Feed:" + getfeed());
         System.out.println("Frequency Feed:" + getFrequency());
         System.out.println("Need Cares?:" +getCares());
+        System.out.println("Aislarlo? :" + liveWith());
         animaType();
         makeSounds();
         habitatExact();
@@ -69,6 +71,11 @@ public class Iguana extends Animals {
      @Override
      public void animaType() {
        System.out.println("Soy un reptil");
+     }
+     @Override
+     public boolean liveWith() {
+        return true;
+
      }
 
 
