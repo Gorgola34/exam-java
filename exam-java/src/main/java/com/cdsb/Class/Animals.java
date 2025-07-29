@@ -20,5 +20,8 @@ public abstract class Animals {
         return habitat;
     }
 
+    public abstract void makeSounds();
+
+    public abstract void habitatExact();
 
 }

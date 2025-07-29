@@ -52,7 +52,17 @@ public class Iguana extends Animals {
         System.out.println("Frequency Feed:" + getFrequency());
         System.out.println("Need Cares?:" +getCares());
         System.out.println("Specie:" + getSpecie());
+        makeSounds();
+        habitatExact();
     }
+     @Override
+     public void makeSounds() {
+        System.out.println("Soy una Iguanaaa");
+     }
+     @Override
+     public void habitatExact() {
+       System.out.println("Me gusta la selva y vivo en ella");
+     }
 
 
 }

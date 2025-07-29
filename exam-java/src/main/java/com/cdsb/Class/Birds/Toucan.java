@@ -54,6 +54,16 @@ public class Toucan extends Animals {
         System.out.println("Frequency Feed:" + getFrequency());
         System.out.println("Need Cares?:" +getCares());
         System.out.println("Specie:" + getSpecie());
+        makeSounds();
+        habitatExact();
     }
+     @Override
+     public void makeSounds() {
+        System.out.println("Soy un señor Tucan");
+     }
+     @Override
+     public void habitatExact() {
+        System.out.println("Me gusta volar, vivo en sitios tropicales");
+     }
 
 }

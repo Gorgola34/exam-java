@@ -53,6 +53,16 @@ public class Dolphin extends Animals {
         System.out.println("Frequency Feed:" + getFrequency());
         System.out.println("Need Cares?:" +getCares());
         System.out.println("Specie:" + getSpecie());
+        makeSounds();
+        habitatExact();
     }
+     @Override
+     public void makeSounds() {
+        System.out.println("Soy el delfin Serafin");
+     }
+     @Override
+     public void habitatExact() {
+       System.out.println("Vivo en el mar saltando");
+     }
 
 }

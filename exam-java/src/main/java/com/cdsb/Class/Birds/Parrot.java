@@ -52,6 +52,16 @@ public class Parrot extends Animals {
         System.out.println("Frequency Feed:" + getFrequency());
         System.out.println("Need Cares?:" +getCares());
         System.out.println("Specie:" + getSpecie());
+        makeSounds();
+        habitatExact();
     }
+     @Override
+     public void makeSounds() {
+        System.out.println("Soy un LOOOOOOOROOOOO");
+     }
+     @Override
+     public void habitatExact() {
+        System.out.println("Vivo en zonas tropicales y no callo");
+     }
 
 }

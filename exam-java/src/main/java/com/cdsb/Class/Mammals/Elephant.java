@@ -53,7 +53,18 @@ public class Elephant extends Animals {
         System.out.println("Frequency Feed:" + getFrequency());
         System.out.println("Need Cares?:" +getCares());
         System.out.println("Specie:" + getSpecie());
+        makeSounds();
+        habitatExact();
     }
+    @Override
+    public void makeSounds() {
+        System.out.println("Soy un elefante");
+    }
+    @Override
+    public void habitatExact() {
+        System.out.println("Vivo en la sabana como buen elefante");
+    }
+
 
 
 }

@@ -54,8 +54,17 @@ public class Lion extends Animals {
         System.out.println("Frequency Feed:" + getFrequency());
         System.out.println("Need Cares?:" +getCares());
         System.out.println("Specie:" + getSpecie());
+        makeSounds();
+        habitatExact();
     }
-
+     @Override
+     public void makeSounds() {
+        System.out.println("ROARRRRRR, soy un León");
+}
+     @Override
+     public void habitatExact() {
+        System.out.println("Vivo en la sabana y soy peligroso");
+     }
 
 
 }

@@ -53,7 +53,17 @@ public class Seal extends Animals {
         System.out.println("Frequency Feed:" + getFrequency());
         System.out.println("Need Cares?:" +getCares());
         System.out.println("Specie:" + getSpecie());
+        makeSounds();
+        habitatExact();
     }
+     @Override
+     public void makeSounds() {
+       System.out.println("Soy una foca que se divierte");
+     }
+     @Override
+     public void habitatExact() {
+        System.out.println("Vivo en el mar");
+     }
 
 
 }
