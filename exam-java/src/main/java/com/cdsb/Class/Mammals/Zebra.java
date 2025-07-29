@@ -4,6 +4,7 @@ import com.cdsb.Class.Animals;
 import com.cdsb.Enums.Behaviour;
 import com.cdsb.Enums.Feed;
 import com.cdsb.Enums.Habitats;
+import com.cdsb.Enums.Mammal;
 import com.cdsb.Enums.Species;
 
 
@@ -13,15 +14,15 @@ public class Zebra extends Animals {
     private Feed feed;
     private int frequency;
     private boolean cares;
-    private Species specie;
+    private Mammal specie;
 
-    public Zebra(Behaviour behaviour,Habitats habitat, int habitatSize, Feed feed, int frequency, boolean cares, Species specie){
-        super(behaviour, habitat);
+    public Zebra(int habitatSize, Feed feed, int frequency, boolean cares, Species mammal){
+        super(Behaviour.PREY,Habitats.TERRESTRIAL);
         this.cares=cares;
         this.feed=feed;
         this.frequency=frequency;
         this.habitatSize=habitatSize;
-        this.specie=specie;
+        this.specie=Mammal.ZEBRA;
 
     }
     public double getSize(){
@@ -42,9 +43,7 @@ public class Zebra extends Animals {
     public Habitats getHabitat(){
         return habitat;
     }
-    public Species getSpecie(){
-        return specie;
-    }
+
      public void showAnimal(){
         System.out.println("Behaviour:" + getBehaviour());
         System.out.println("Habitat:" + getHabitat());
@@ -52,7 +51,7 @@ public class Zebra extends Animals {
         System.out.println("Feed:" + getfeed());
         System.out.println("Frequency Feed:" + getFrequency());
         System.out.println("Need Cares?:" +getCares());
-        System.out.println("Specie:" + getSpecie());
+        animaType();
         makeSounds();
         habitatExact();
     }
@@ -64,5 +63,11 @@ public class Zebra extends Animals {
      public void habitatExact() {
        System.out.println("Vivo en la sabana y corro mucho ");
      }
+     @Override
+     public void animaType() {
+        System.out.println("Soy un mamífero");
+     }
+
+
 
 }

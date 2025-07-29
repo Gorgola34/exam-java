@@ -2,6 +2,7 @@ package com.cdsb.Class.Birds;
 
 import com.cdsb.Class.Animals;
 import com.cdsb.Enums.Behaviour;
+import com.cdsb.Enums.Birds;
 import com.cdsb.Enums.Feed;
 import com.cdsb.Enums.Habitats;
 import com.cdsb.Enums.Species;
@@ -15,15 +16,15 @@ public class Toucan extends Animals {
     Feed feed;
     int frequency;
     boolean cares;
-    Species specie;
+    Birds specie;
 
-    public Toucan (Behaviour behaviour, Habitats habitat,int habitatSize,Feed feed,int frequency,boolean cares, Species specie){
-        super(behaviour, habitat);
+    public Toucan (int habitatSize,Feed feed,int frequency,boolean cares, Species specie){
+        super(Behaviour.PREY, Habitats.TERRESTRIAL);
         this.cares=cares;
         this.feed=feed;
         this.frequency=frequency;
         this.habitatSize=habitatSize;
-        this.specie=specie;
+        this.specie=Birds.TOUCAN;
     }
     public double getSize(){
         return habitatSize;
@@ -43,9 +44,7 @@ public class Toucan extends Animals {
     public Habitats getHabitat(){
         return habitat;
     }
-    public Species getSpecie(){
-        return specie;
-    }
+
      public void showAnimal(){
         System.out.println("Behaviour:" + getBehaviour());
         System.out.println("Habitat:" + getHabitat());
@@ -53,7 +52,7 @@ public class Toucan extends Animals {
         System.out.println("Feed:" + getfeed());
         System.out.println("Frequency Feed:" + getFrequency());
         System.out.println("Need Cares?:" +getCares());
-        System.out.println("Specie:" + getSpecie());
+        animaType();
         makeSounds();
         habitatExact();
     }
@@ -65,5 +64,10 @@ public class Toucan extends Animals {
      public void habitatExact() {
         System.out.println("Me gusta volar, vivo en sitios tropicales");
      }
+     @Override
+     public void animaType() {
+      System.out.println("Soy un ave");
+     }
+
 
 }

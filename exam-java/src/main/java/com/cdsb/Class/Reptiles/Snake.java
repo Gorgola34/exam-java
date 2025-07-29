@@ -4,6 +4,7 @@ import com.cdsb.Class.Animals;
 import com.cdsb.Enums.Behaviour;
 import com.cdsb.Enums.Feed;
 import com.cdsb.Enums.Habitats;
+import com.cdsb.Enums.Reptiles;
 import com.cdsb.Enums.Species;
 
 
@@ -14,15 +15,15 @@ public class Snake extends Animals {
     Feed feed;
     int frequency;
     boolean cares;
-    Species specie;
+    Reptiles specie;
 
-    public Snake(Behaviour behaviour, Habitats habitat, int habitatSize, Feed feed, int frequency, boolean cares, Species specie){
-        super(behaviour,habitat);
+    public Snake(int habitatSize, Feed feed, int frequency, boolean cares, Species reptil){
+        super(Behaviour.PREDATOR,Habitats.TERRARIUM);
         this.cares=cares;
         this.feed=feed;
         this.frequency=frequency;
         this.cares=cares;
-        this.specie=specie;
+        this.specie=Reptiles.SNAKE;
 
     }
     public double getSize(){
@@ -43,9 +44,7 @@ public class Snake extends Animals {
     public Habitats getHabitat(){
         return habitat;
     }
-    public Species getSpecie(){
-        return specie;
-    }
+
      public void showAnimal(){
         System.out.println("Behaviour:" + getBehaviour());
         System.out.println("Habitat:" + getHabitat());
@@ -53,7 +52,7 @@ public class Snake extends Animals {
         System.out.println("Feed:" + getfeed());
         System.out.println("Frequency Feed:" + getFrequency());
         System.out.println("Need Cares?:" +getCares());
-        System.out.println("Specie:" + getSpecie());
+        animaType();
         makeSounds();
         habitatExact();
     }
@@ -64,6 +63,10 @@ public class Snake extends Animals {
      @Override
      public void habitatExact() {
         System.out.println("Vivo en los arboles de la selva y cazo");
+     }
+     @Override
+     public void animaType() {
+        System.out.println("Soy un reptil");
      }
 
 

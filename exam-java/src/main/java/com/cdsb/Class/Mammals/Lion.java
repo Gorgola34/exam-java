@@ -4,6 +4,7 @@ import com.cdsb.Class.Animals;
 import com.cdsb.Enums.Behaviour;
 import com.cdsb.Enums.Feed;
 import com.cdsb.Enums.Habitats;
+import com.cdsb.Enums.Mammal;
 import com.cdsb.Enums.Species;
 
 
@@ -13,16 +14,15 @@ public class Lion extends Animals {
     private Feed feed;
     private int frequency;
     private boolean cares;
-    private Species specie;
+    private Mammal specie;
 
-    public Lion(Behaviour behaviour, Habitats habitat, int habitatSize, Feed feed, int frequency, boolean cares, Species specie){
-        super(behaviour, habitat);
+    public Lion(int habitatSize, Feed feed, int frequency, boolean cares, Mammal lion){
+        super(Behaviour.PREDATOR, Habitats.TERRESTRIAL);
         this.cares=cares;
         this.feed=feed;
         this.frequency=frequency;
         this.habitatSize=habitatSize;
-        this.specie=specie;
-
+        this.specie=Mammal.LION;
 
     }
     public double getSize(){
@@ -43,9 +43,6 @@ public class Lion extends Animals {
     public Habitats getHabitat(){
         return habitat;
     }
-    public Species getSpecie(){
-        return specie;
-    }
      public void showAnimal(){
         System.out.println("Behaviour:" + getBehaviour());
         System.out.println("Habitat:" + getHabitat());
@@ -53,7 +50,7 @@ public class Lion extends Animals {
         System.out.println("Feed:" + getfeed());
         System.out.println("Frequency Feed:" + getFrequency());
         System.out.println("Need Cares?:" +getCares());
-        System.out.println("Specie:" + getSpecie());
+        animaType();
         makeSounds();
         habitatExact();
     }
@@ -64,6 +61,10 @@ public class Lion extends Animals {
      @Override
      public void habitatExact() {
         System.out.println("Vivo en la sabana y soy peligroso");
+     }
+     @Override
+     public void animaType() {
+       System.out.println("Soy un mamífero");
      }
 
 

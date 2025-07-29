@@ -24,4 +24,7 @@ public abstract class Animals {
 
     public abstract void habitatExact();
 
+    public abstract void animaType();
+
+
 }
