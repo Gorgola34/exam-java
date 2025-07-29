@@ -1,4 +1,4 @@
-package com.cdsb.Enums;
+package Enums;
 
 
 public enum Mammals {
