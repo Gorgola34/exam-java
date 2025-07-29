@@ -16,7 +16,7 @@ public class Zebra extends Animals {
     private boolean cares;
     private Mammal specie;
 
-    public Zebra(int habitatSize, Feed feed, int frequency, boolean cares, Species mammal){
+    public Zebra(int habitatSize, Feed feed, int frequency, boolean cares, Mammal zebra){
         super(Behaviour.PREY,Habitats.TERRESTRIAL);
         this.cares=cares;
         this.feed=feed;

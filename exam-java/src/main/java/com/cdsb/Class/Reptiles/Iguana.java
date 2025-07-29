@@ -16,7 +16,7 @@ public class Iguana extends Animals implements Live {
     boolean cares;
     Reptiles specie;
 
-    public Iguana( int habitatSize,Feed feed, int frequency,boolean cares, Species reptil){
+    public Iguana( int habitatSize,Feed feed, int frequency,boolean cares, Reptiles iguana){
         super(Behaviour.TERRITORIAL, Habitats.TERRARIUM);
         this.cares=cares;
         this.feed=feed;

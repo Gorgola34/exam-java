@@ -16,7 +16,7 @@ public class Elephant extends Animals {
     private boolean cares;
     private Mammal specie;
 
-    public Elephant(int habitatSize, Feed feed, int frequency,boolean cares, Species mammal){
+    public Elephant(int habitatSize, Feed feed, int frequency,boolean cares, Mammal elephant){
         super(Behaviour.PREY, Habitats.TERRESTRIAL);
         this.habitatSize=habitatSize;
         this.frequency=frequency;

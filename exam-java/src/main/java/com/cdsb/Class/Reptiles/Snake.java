@@ -18,7 +18,7 @@ public class Snake extends Animals implements Live {
     boolean cares;
     Reptiles specie;
 
-    public Snake(int habitatSize, Feed feed, int frequency, boolean cares, Species reptil){
+    public Snake(int habitatSize, Feed feed, int frequency, boolean cares, Reptiles snake){
         super(Behaviour.TERRITORIAL,Habitats.TERRARIUM);
         this.cares=cares;
         this.feed=feed;

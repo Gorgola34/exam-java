@@ -18,7 +18,7 @@ public class Toucan extends Animals {
     boolean cares;
     Birds specie;
 
-    public Toucan (int habitatSize,Feed feed,int frequency,boolean cares, Species specie){
+    public Toucan (int habitatSize,Feed feed,int frequency,boolean cares, Birds toucan){
         super(Behaviour.PREY, Habitats.TERRESTRIAL);
         this.cares=cares;
         this.feed=feed;

@@ -16,7 +16,7 @@ public class Parrot extends Animals {
     boolean cares;
     Birds specie;
 
-    public Parrot( int habitatSize, Feed feed, int frequency,boolean cares, Species specie){
+    public Parrot( int habitatSize, Feed feed, int frequency,boolean cares, Birds parrot){
         super(Behaviour.PREY,Habitats.TERRESTRIAL);
         this.habitatSize=habitatSize;
         this.feed=feed;
