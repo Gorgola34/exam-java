@@ -42,8 +42,12 @@ public class Iguana extends Animals {
     public Habitats getHabitat(){
         return habitat;
     }
+    public Reptiles getSpecie(){
+        return specie;
+    }
 
      public void showAnimal(){
+        System.out.println("Specie: " + getSpecie());
         System.out.println("Behaviour:" + getBehaviour());
         System.out.println("Habitat:" + getHabitat());
         System.out.println("Habitat Size:" + getSize());
