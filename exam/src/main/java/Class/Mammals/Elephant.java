@@ -1,6 +1,7 @@
 package Class.Mammals;
 
 import Class.Animals;
+import Enums.Behaviour;
 import Enums.Feed;
 import Enums.Habitats;
 import Enums.Species;
@@ -13,8 +14,8 @@ public class Elephant extends Animals {
     private boolean cares;
     private Species specie;
 
-    public Elephant(String behaviourWild,Habitats habitat, int habitatSize, Feed feed, int frequency,boolean cares, Species specie){
-        super(behaviourWild, habitat);
+    public Elephant(Behaviour behaviour,Habitats habitat, int habitatSize, Feed feed, int frequency,boolean cares, Species specie){
+        super(behaviour, habitat);
         this.habitatSize=habitatSize;
         this.frequency=frequency;
         this.feed=feed;

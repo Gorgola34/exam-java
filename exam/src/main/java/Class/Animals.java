@@ -1,19 +1,20 @@
 package Class;
 
+import Enums.Behaviour;
 import Enums.Habitats;
 
 public abstract class Animals {
 
-    private String behaviourWild;
+    private Behaviour behaviour;
     private Habitats habitat;
 
-    public Animals(String behaviourWild, Habitats habitat){
-        this.behaviourWild=behaviourWild;
+    public Animals(Behaviour behaviour, Habitats habitat){
+        this.behaviour=behaviour;
         this.habitat=habitat;
 
     }
-    public String getBehaviour(){
-        return behaviourWild;
+    public Behaviour getBehaviour(){
+        return behaviour;
     }
     public Habitats getHabitat(){
         return habitat;
