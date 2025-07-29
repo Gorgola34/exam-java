@@ -1,20 +1,31 @@
+import Class.Aquatics.Dolphin;
+import Class.Aquatics.Seal;
 import Class.Birds.Parrot;
 import Class.Birds.Toucan;
 import Class.Mammals.Elephant;
 import Class.Mammals.Lion;
 import Class.Mammals.Zebra;
+import Class.Reptiles.Iguana;
+import Class.Reptiles.Snake;
 import Enums.Feed;
 import Enums.Habitats;
+import Enums.Species;
 
 public class AppZoo {
 
     public static void main(String[] args) {
 
-        Lion l = new Lion("Relax", Habitats.TERRESTRIAL, 28.3,Feed.CARNIVOROUS, 3, true);
-        Elephant e= new Elephant("Angry", Habitats.TERRESTRIAL, 30,Feed.HERBIVOROUS, 1, true);
-        Zebra z = new Zebra("Sad", Habitats.TERRESTRIAL, 12,Feed.HERBIVOROUS, 1, true);
-        Parrot p = new Parrot("Happy",Habitats.TERRESTRIAL,4.2,Feed.OMNIVOROUS,2,false);
-        Toucan t = new ToucaN("Angry",Habitats.TERRESTRIAL, 1.2, Feed.OMNIVOROUS, 1, false);
+        Lion l = new Lion("Relax", Habitats.TERRESTRIAL, 28,Feed.CARNIVOROUS, 3, true,Species.MAMMAL);
+        Elephant e= new Elephant("Angry", Habitats.TERRESTRIAL, 30,Feed.HERBIVOROUS, 1, true,Species.MAMMAL);
+        Zebra z = new Zebra("Sad", Habitats.TERRESTRIAL, 12,Feed.HERBIVOROUS, 1, true,Species.MAMMAL);
+        Parrot p = new Parrot("Happy",Habitats.TERRESTRIAL,4,Feed.OMNIVOROUS,2,false,Species.BIRDS);
+        Toucan t = new Toucan("Angry",Habitats.TERRESTRIAL, 21, Feed.OMNIVOROUS, 1, false,Species.BIRDS);
+        Snake sn= new Snake("Template",Habitats.TERRARIUM,10,Feed.CARNIVOROUS,2,true,Species.REPTIL);
+        Iguana i = new Iguana("Relax", Habitats.TERRARIUM, 20, Feed.OMNIVOROUS, 1, false,Species.REPTIL);
+        Dolphin d = new Dolphin("Relax",Habitats.AQUATIC,30,Feed.OMNIVOROUS,2,true,Species.ACUATIC);
+        Seal sl = new Seal("Angry",Habitats.AQUATIC,22,Feed.CARNIVOROUS,3,true,Species.ACUATIC);
+
+
 
     }
 
