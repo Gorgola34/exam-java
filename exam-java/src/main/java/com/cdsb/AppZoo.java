@@ -18,6 +18,7 @@ import com.cdsb.Enums.Species;
 public class AppZoo {
 
     public static void main(String[] args) {
+        
         Lion l= new Lion( 20,Feed.CARNIVOROUS, 3, false, Mammal.LION );
         Elephant e= new Elephant(10, Feed.HERBIVOROUS, 1, false, Species.MAMMAL);
         Zebra z= new Zebra(40, Feed.HERBIVOROUS, 3, true,Species.MAMMAL);
