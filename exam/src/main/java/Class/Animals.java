@@ -2,7 +2,7 @@ package Class;
 
 import Enums.Habitats;
 
-public class Animals {
+public abstract class Animals {
 
     private String behaviourWild;
     private Habitats habitat;

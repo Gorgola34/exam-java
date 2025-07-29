@@ -1,5 +1,6 @@
-package Class;
+package Class.Mammals;
 
+import Class.Animals;
 import Enums.Habitats;
 
 public class Mammal extends Animals {
