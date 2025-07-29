@@ -18,7 +18,7 @@ public class Dolphin extends Animals {
     Acuatic specie;
 
     public Dolphin(int habitatSize,Feed feed,int frequency,boolean cares, Species acuatic){
-        super(Behaviour.PREDATOR, Habitats.AQUATIC);
+        super(Behaviour.SOCIABLE, Habitats.AQUATIC);
         this.cares=cares;
         this.feed=feed;
         this.frequency=frequency;

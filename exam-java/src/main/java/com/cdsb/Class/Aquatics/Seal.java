@@ -18,7 +18,7 @@ public class Seal extends Animals {
     Acuatic specie;
 
     public Seal( int habitatSize, Feed feed, int frequency,boolean cares, Species specie){
-        super(Behaviour.PREDATOR, Habitats.AQUATIC);
+        super(Behaviour.SOCIABLE, Habitats.AQUATIC);
         this.cares=cares;
         this.feed=feed;
         this.frequency=frequency;

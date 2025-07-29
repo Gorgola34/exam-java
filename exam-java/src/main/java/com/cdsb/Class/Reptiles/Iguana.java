@@ -16,7 +16,7 @@ public class Iguana extends Animals {
     Reptiles specie;
 
     public Iguana( int habitatSize,Feed feed, int frequency,boolean cares, Species reptil){
-        super(Behaviour.PREDATOR, Habitats.TERRARIUM);
+        super(Behaviour.TERRITORIAL, Habitats.TERRARIUM);
         this.cares=cares;
         this.feed=feed;
         this.frequency=frequency;
