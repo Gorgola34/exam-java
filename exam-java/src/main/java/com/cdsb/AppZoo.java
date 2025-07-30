@@ -7,13 +7,8 @@ public class AppZoo {
 
     public static void main(String[] args) {
 
-        //ANIMALES AGRUPADOS POR HABITATS
-        // AppZoo.addTerrestrial();
-        // AppZoo.addTerrestrial2();
-        // AppZoo.addAcuatic();
-        // AppZoo.addTerrarium();
-
         Zoo z1= new Zoo();
+
         z1.addAcuatic();
         z1.addTerrarium();
         z1.addTerrestrial();
@@ -44,8 +39,6 @@ public class AppZoo {
 
 
     }
-
-
 
 
         };
