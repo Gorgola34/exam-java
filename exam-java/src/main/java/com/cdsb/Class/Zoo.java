@@ -32,8 +32,7 @@ public class Zoo {
 
         terrestrialPrey.add(new Zebra(30, Feed.HERBIVOROUS, 3, true,Mammal.ZEBRA));
         terrestrialPrey.add(new Elephant(10, Feed.HERBIVOROUS, 1, false, Mammal.ELEPHANT));
-        // for(IAnimals a:terrestrial){
-        //     System.out.println(a);
+
         }
 
     public void addTerrestrialPredators(){
@@ -43,22 +42,19 @@ public class Zoo {
     public void addTerrestrialBirds(){
         terrestrialBirds.add(new Toucan(6,Feed.OMNIVOROUS, 2, false, Birds.TOUCAN));
         terrestrialBirds.add(new Parrot(10, Feed.OMNIVOROUS, 5, false, Birds.PARROT));
-        // for(IAnimals a: terrestrial2){
-        //     System.out.println(a);
+
         }
 
     public void addAcuatic(){
         acuatic.add(new Seal(15, Feed.CARNIVOROUS, 2, true, Acuatic.SEAL));
         acuatic.add(new Dolphin(40, Feed.CARNIVOROUS, 2, true,Acuatic.DOLPHIN));
-        // for(IAnimals a:acuatic){
-        //     System.out.println(a);
+
         }
 
     public void addTerrarium(){
         terrarium.add(new Snake(20,Feed.CARNIVOROUS,1,true,Reptiles.SNAKE));
         terrarium.add(new Iguana(34, Feed.CARNIVOROUS, 2, false, Reptiles.IGUANA));
-        // for(IAnimals a:terrarium){
-        //     System.out.println(a);
+       
         }
     public List<Animals> getTerrarium(){
         return terrarium;
