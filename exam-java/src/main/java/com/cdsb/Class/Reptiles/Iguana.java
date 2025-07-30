@@ -5,9 +5,10 @@ import com.cdsb.Enums.Behaviour;
 import com.cdsb.Enums.Feed;
 import com.cdsb.Enums.Habitats;
 import com.cdsb.Enums.Reptiles;
+import com.cdsb.Interfaces.IAnimals;
 import com.cdsb.Interfaces.Live;
 
-public class Iguana extends Animals implements Live {
+public class Iguana extends Animals implements Live, IAnimals {
 
     int habitatSize;
     Feed feed;

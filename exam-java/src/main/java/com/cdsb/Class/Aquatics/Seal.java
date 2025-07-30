@@ -5,10 +5,11 @@ import com.cdsb.Enums.Acuatic;
 import com.cdsb.Enums.Behaviour;
 import com.cdsb.Enums.Feed;
 import com.cdsb.Enums.Habitats;
+import com.cdsb.Interfaces.IAnimals;
 
 
 
-public class Seal extends Animals {
+public class Seal extends Animals implements IAnimals {
 
     int habitatSize;
     Feed feed;

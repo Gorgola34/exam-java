@@ -5,11 +5,12 @@ import com.cdsb.Enums.Behaviour;
 import com.cdsb.Enums.Birds;
 import com.cdsb.Enums.Feed;
 import com.cdsb.Enums.Habitats;
+import com.cdsb.Interfaces.IAnimals;
 
 
 
 
-public class Toucan extends Animals {
+public class Toucan extends Animals implements IAnimals {
 
 
     int habitatSize;

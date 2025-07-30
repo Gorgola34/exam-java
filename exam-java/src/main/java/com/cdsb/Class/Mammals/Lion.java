@@ -9,7 +9,7 @@ import com.cdsb.Interfaces.IAnimals;
 
 
 
-public class Lion extends Animals {
+public class Lion extends Animals implements IAnimals {
 
     private int habitatSize;
     private Feed feed;

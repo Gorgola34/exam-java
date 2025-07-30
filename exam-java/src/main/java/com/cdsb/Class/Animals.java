@@ -4,7 +4,7 @@ import com.cdsb.Enums.Behaviour;
 import com.cdsb.Enums.Habitats;
 import com.cdsb.Interfaces.IAnimals;
 
-public abstract class Animals implements IAnimals {
+public abstract class Animals {
 
     protected Behaviour behaviour;
     protected Habitats habitat;
@@ -20,7 +20,7 @@ public abstract class Animals implements IAnimals {
     public Habitats getHabitat(){
         return habitat;
     }
-    
+
     @Override
     public String toString() {
         return "Animals [behaviour=" + behaviour + ", habitat=" + habitat + "]";
