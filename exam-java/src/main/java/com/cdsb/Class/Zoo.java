@@ -22,22 +22,27 @@ import com.cdsb.Interfaces.IAnimals;
 public class Zoo {
 
 
-    public static List<Animals> terrestrial= new ArrayList<>();
+    public static List<Animals> terrestrialPrey= new ArrayList<>();
+    public static List<Animals> terrestrialPredators= new ArrayList<>();
     public static List<Animals> acuatic= new ArrayList<>();
     public static List<Animals> terrarium= new ArrayList<>();
-    public static List<Animals> terrestrial2= new ArrayList<>();
+    public static List<Animals> terrestrialBirds= new ArrayList<>();
 
-    public void addTerrestrial(){
-        terrestrial.add(new Lion(20,Feed.CARNIVOROUS, 3, false, Mammal.LION));
-        terrestrial.add(new Zebra(30, Feed.HERBIVOROUS, 3, true,Mammal.ZEBRA));
-        terrestrial.add(new Elephant(10, Feed.HERBIVOROUS, 1, false, Mammal.ELEPHANT));
+    public void addTerrestrialPreys(){
+
+        terrestrialPrey.add(new Zebra(30, Feed.HERBIVOROUS, 3, true,Mammal.ZEBRA));
+        terrestrialPrey.add(new Elephant(10, Feed.HERBIVOROUS, 1, false, Mammal.ELEPHANT));
         // for(IAnimals a:terrestrial){
         //     System.out.println(a);
         }
 
-    public void addTerrestrial2(){
-        terrestrial2.add(new Toucan(6,Feed.OMNIVOROUS, 2, false, Birds.TOUCAN));
-        terrestrial2.add(new Parrot(10, Feed.OMNIVOROUS, 5, false, Birds.PARROT));
+    public void addTerrestrialPredators(){
+      terrestrialPredators.add(new Lion(20,Feed.CARNIVOROUS, 3, false, Mammal.LION));
+    }
+
+    public void addTerrestrialBirds(){
+        terrestrialBirds.add(new Toucan(6,Feed.OMNIVOROUS, 2, false, Birds.TOUCAN));
+        terrestrialBirds.add(new Parrot(10, Feed.OMNIVOROUS, 5, false, Birds.PARROT));
         // for(IAnimals a: terrestrial2){
         //     System.out.println(a);
         }
@@ -58,11 +63,14 @@ public class Zoo {
     public List<Animals> getTerrarium(){
         return terrarium;
     }
-     public List<Animals> getTerrestrial(){
-        return terrestrial;
+     public List<Animals> getTerrestrialPreys(){
+        return terrestrialPrey;
+    }
+    public List<Animals> getTerrestrialPredators(){
+        return terrestrialPredators;
     }
      public List<Animals> getTerrestrial2(){
-        return terrestrial2;
+        return terrestrialBirds;
     }
      public List<Animals> getAcuatic(){
         return acuatic;

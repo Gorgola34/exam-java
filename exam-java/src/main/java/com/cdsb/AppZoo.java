@@ -11,20 +11,26 @@ public class AppZoo {
 
         z1.addAcuatic();
         z1.addTerrarium();
-        z1.addTerrestrial();
-        z1.addTerrestrial2();
+        z1.addTerrestrialPreys();
+        z1.addTerrestrialBirds();
+        z1.addTerrestrialPredators();
 
         System.out.println("\nHABITAT TERRESTRE");
-        System.out.println("ZONA 1");
-        for(Animals a:z1.getTerrestrial()){
+        System.out.println("ZONA LIBRE DE DEPREDADORES");
+        for(Animals a:z1.getTerrestrialPreys()){
             System.out.println(a);
         }
+        System.out.println("\nZONA DE DEPREDADORES");
+        for(Animals a:z1.getTerrestrialPredators()){
+            System.out.println(a);
 
-        System.out.println("\nZONA 2");
+        }
+
+        System.out.println("\nZONA DE AVES TROPICALES");
         for(Animals a: z1.getTerrestrial2()){
             System.out.println(a);
         }
-        System.out.println("\nTERRARIO (ZONA 3)");
+        System.out.println("\nTERRARIO (ZONA DE REPTILES)");
         for(Animals a: z1.getTerrarium()){
             System.out.println(a);
         }
