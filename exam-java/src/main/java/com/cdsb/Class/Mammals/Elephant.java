@@ -47,18 +47,6 @@ public class Elephant extends Animals {
         return specie;
     }
 
-    public void showAnimal(){
-        System.out.println("Specie: " + getSpecie());
-        System.out.println("Behaviour:" + getBehaviour());
-        System.out.println("Habitat:" + getHabitat());
-        System.out.println("Habitat Size:" + getSize());
-        System.out.println("Feed:" + getfeed());
-        System.out.println("Frequency Feed:" + getFrequency());
-        System.out.println("Need Cares?:" +getCares());
-        animaType();
-        makeSounds();
-        habitatExact();
-    }
     @Override
     public void makeSounds() {
         System.out.println("Soy un elefante");
@@ -71,6 +59,12 @@ public class Elephant extends Animals {
     public void animaType() {
         System.out.println("Soy un mamífero");
     }
+    @Override
+    public String toString() {
+        return "Elephant [behaviour=" + behaviour + ", habitat=" + habitat + ", habitatSize=" + habitatSize + ", feed="
+                + feed + ", frequency=" + frequency + ", cares=" + cares + ", specie=" + specie + "]";
+    }
+
 
 
 

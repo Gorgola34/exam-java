@@ -2,8 +2,9 @@ package com.cdsb.Class;
 
 import com.cdsb.Enums.Behaviour;
 import com.cdsb.Enums.Habitats;
+import com.cdsb.Interfaces.IAnimals;
 
-public abstract class Animals {
+public abstract class Animals implements IAnimals {
 
     protected Behaviour behaviour;
     protected Habitats habitat;
@@ -19,12 +20,11 @@ public abstract class Animals {
     public Habitats getHabitat(){
         return habitat;
     }
-
-    public abstract void makeSounds();
-
-    public abstract void habitatExact();
-
-    public abstract void animaType();
+    
+    @Override
+    public String toString() {
+        return "Animals [behaviour=" + behaviour + ", habitat=" + habitat + "]";
+    }
 
 
 }

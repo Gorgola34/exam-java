@@ -46,18 +46,7 @@ public class Lion extends Animals {
     public Mammal getSpecie(){
         return specie;
     }
-     public void showAnimal(){
-        System.out.println("Specie: " + getSpecie());
-        System.out.println("Behaviour:" + getBehaviour());
-        System.out.println("Habitat:" + getHabitat());
-        System.out.println("Habitat Size:" + getSize());
-        System.out.println("Feed:" + getfeed());
-        System.out.println("Frequency Feed:" + getFrequency());
-        System.out.println("Need Cares?:" +getCares());
-        animaType();
-        makeSounds();
-        habitatExact();
-    }
+   
      @Override
      public void makeSounds() {
         System.out.println("ROARRRRRR, soy un León");
@@ -69,6 +58,11 @@ public class Lion extends Animals {
      @Override
      public void animaType() {
        System.out.println("Soy un mamífero");
+     }
+     @Override
+     public String toString() {
+        return "Lion [behaviour=" + behaviour + ", habitat=" + habitat + ", habitatSize=" + habitatSize + ", feed="
+                + feed + ", frequency=" + frequency + ", cares=" + cares + ", specie=" + specie + "]";
      }
 
 

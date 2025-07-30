@@ -26,6 +26,11 @@ public class Toucan extends Animals {
         this.habitatSize=habitatSize;
         this.specie=Birds.TOUCAN;
     }
+    @Override
+    public String toString() {
+        return "Toucan [behaviour=" + behaviour + ", habitat=" + habitat + ", habitatSize=" + habitatSize + ", feed="
+                + feed + ", frequency=" + frequency + ", cares=" + cares + ", specie=" + specie + "]";
+    }
     public double getSize(){
         return habitatSize;
     }
@@ -48,18 +53,6 @@ public class Toucan extends Animals {
         return specie;
     }
 
-     public void showAnimal(){
-        System.out.println("Specie: " + getSpecie());
-        System.out.println("Behaviour:" + getBehaviour());
-        System.out.println("Habitat:" + getHabitat());
-        System.out.println("Habitat Size:" + getSize());
-        System.out.println("Feed:" + getfeed());
-        System.out.println("Frequency Feed:" + getFrequency());
-        System.out.println("Need Cares?:" +getCares());
-        animaType();
-        makeSounds();
-        habitatExact();
-    }
      @Override
      public void makeSounds() {
         System.out.println("Soy un señor Tucan");
@@ -72,6 +65,7 @@ public class Toucan extends Animals {
      public void animaType() {
       System.out.println("Soy un ave");
      }
+
 
 
 }

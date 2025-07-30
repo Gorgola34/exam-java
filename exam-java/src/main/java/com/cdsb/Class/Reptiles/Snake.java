@@ -49,19 +49,6 @@ public class Snake extends Animals implements Live {
         return specie;
     }
 
-     public void showAnimal(){
-        System.out.println("Specie: " + getSpecie());
-        System.out.println("Behaviour:" + getBehaviour());
-        System.out.println("Habitat:" + getHabitat());
-        System.out.println("Habitat Size:" + getSize());
-        System.out.println("Feed:" + getfeed());
-        System.out.println("Frequency Feed:" + getFrequency());
-        System.out.println("Need Cares?:" +getCares());
-        System.out.println("Aislarlo? :" + liveWith());
-        animaType();
-        makeSounds();
-        habitatExact();
-    }
      @Override
      public void makeSounds() {
        System.out.println("snzzzzzz Soy una serpiente");
@@ -74,8 +61,15 @@ public class Snake extends Animals implements Live {
      public void animaType() {
         System.out.println("Soy un reptil");
      }
+
      @Override
-     public boolean liveWith() {
+    public String toString() {
+        return "Snake [behaviour=" + behaviour + ", habitat=" + habitat + ", habitatSize=" + habitatSize + ", feed="
+                + feed + ", frequency=" + frequency + ", cares=" + cares + ", specie=" + specie + ", liveAlone()="
+                + liveAlone() + "]";
+    }
+     @Override
+     public boolean liveAlone() {
         return true;
      }
 

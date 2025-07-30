@@ -24,6 +24,11 @@ public class Parrot extends Animals {
         this.frequency=frequency;
         this.specie=Birds.PARROT;
     }
+    @Override
+    public String toString() {
+        return "Parrot [behaviour=" + behaviour + ", habitat=" + habitat + ", habitatSize=" + habitatSize + ", feed="
+                + feed + ", frequency=" + frequency + ", cares=" + cares + ", specie=" + specie + "]";
+    }
     public double getSize(){
         return habitatSize;
     }
@@ -46,18 +51,7 @@ public class Parrot extends Animals {
         return specie;
     }
 
-     public void showAnimal(){
-        System.out.println("Specie: " + getSpecie());
-        System.out.println("Behaviour:" + getBehaviour());
-        System.out.println("Habitat:" + getHabitat());
-        System.out.println("Habitat Size:" + getSize());
-        System.out.println("Feed:" + getfeed());
-        System.out.println("Frequency Feed:" + getFrequency());
-        System.out.println("Need Cares?:" +getCares());
-        animaType();
-        makeSounds();
-        habitatExact();
-    }
+     
      @Override
      public void makeSounds() {
         System.out.println("Soy un LOOOOOOOROOOOO");
