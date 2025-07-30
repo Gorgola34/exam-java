@@ -2,7 +2,7 @@ package com.cdsb.Interfaces;
 
 public interface IAnimals {
 
-    void makeSounds();
+    void  makeSounds();
 
     void habitatExact();
 

@@ -5,6 +5,7 @@ import com.cdsb.Enums.Behaviour;
 import com.cdsb.Enums.Feed;
 import com.cdsb.Enums.Habitats;
 import com.cdsb.Enums.Mammal;
+import com.cdsb.Interfaces.IAnimals;
 
 
 
