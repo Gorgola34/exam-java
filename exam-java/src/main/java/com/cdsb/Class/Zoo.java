@@ -43,8 +43,8 @@ public class Zoo {
         }
 
     public void addAcuatic(){
-        acuatic.add(new Seal(15, Feed.CARNIVOROUS, 2, true, Acuatic.SEALS));
-        acuatic.add(new Dolphin(40, Feed.CARNIVOROUS, 2, true,Acuatic.DOLPHINS));
+        acuatic.add(new Seal(15, Feed.CARNIVOROUS, 2, true, Acuatic.SEAL));
+        acuatic.add(new Dolphin(40, Feed.CARNIVOROUS, 2, true,Acuatic.DOLPHIN));
         // for(IAnimals a:acuatic){
         //     System.out.println(a);
         }

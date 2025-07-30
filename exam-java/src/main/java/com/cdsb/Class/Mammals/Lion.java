@@ -5,7 +5,7 @@ import com.cdsb.Enums.Behaviour;
 import com.cdsb.Enums.Feed;
 import com.cdsb.Enums.Habitats;
 import com.cdsb.Enums.Mammal;
-import com.cdsb.Enums.Species;
+
 
 
 public class Lion extends Animals {
@@ -46,7 +46,7 @@ public class Lion extends Animals {
     public Mammal getSpecie(){
         return specie;
     }
-   
+
      @Override
      public void makeSounds() {
         System.out.println("ROARRRRRR, soy un León");

@@ -5,7 +5,6 @@ import com.cdsb.Enums.Acuatic;
 import com.cdsb.Enums.Behaviour;
 import com.cdsb.Enums.Feed;
 import com.cdsb.Enums.Habitats;
-import com.cdsb.Enums.Species;
 
 
 
@@ -23,7 +22,7 @@ public class Dolphin extends Animals {
         this.feed=feed;
         this.frequency=frequency;
         this.habitatSize=habitatSize;
-        this.specie=Acuatic.DOLPHINS;
+        this.specie=Acuatic.DOLPHIN;
     }
     public double getSize(){
         return habitatSize;

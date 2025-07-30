@@ -5,7 +5,7 @@ import com.cdsb.Enums.Behaviour;
 import com.cdsb.Enums.Birds;
 import com.cdsb.Enums.Feed;
 import com.cdsb.Enums.Habitats;
-import com.cdsb.Enums.Species;
+
 
 
 public class Parrot extends Animals {
@@ -51,7 +51,7 @@ public class Parrot extends Animals {
         return specie;
     }
 
-     
+
      @Override
      public void makeSounds() {
         System.out.println("Soy un LOOOOOOOROOOOO");
